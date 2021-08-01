@@ -1,0 +1,17 @@
+{
+  "name": "dlt-iot-ecommerce",
+  "version": "1.0.0",
+  "description": "DLT-IoT End to End Solution",
+  "main": "index.js",
+  "author": "Waqas Ahmed <wakqasahmed@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "morgan": "^1.10.0"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "path": "^0.12.7",
+    "pug": "^3.0.2"
+  }
+}

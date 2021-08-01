@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('header'); -%>
+  <body>
+    <div class="container">
+      <br />
+      <h2>End to End IoT DLT eCommerce Solution</h2>
+      <br />
+      <div class="row" id="ads">
+        <% if (product.slug == 'ledger-nano-x') { %>
+        <!-- Category Card -->
+        <div class="col-md-6">
+          <div class="card rounded">
+            <div class="card-image">
+              <span class="card-notify-badge">Ledger Nano X</span>
+              <span class="card-notify-year">Upto 100 apps</span>
+              <!-- <img
+                class="img-fluid"
+                src="https://cdn.shopify.com/s/files/1/2974/4858/files/DESCRIPTION-LNX.png?v=1624516284"
+                alt="Ledger Nano X"
+              /> -->
+              <img
+                class="img-fluid"
+                src="https://www.ledger.com/wp-content/themes/ledger-v2/public/images/banner/banner-home-lnx.jpg"
+                alt="Ledger Nano X"
+              />
+            </div>
+            <div class="card-image-overlay m-auto">
+              <span class="card-detail-badge">Price: € 125.00</span>
+              <span class="card-detail-badge">Weight: 34g</span>
+              <span class="card-detail-badge"
+                >Size: 72mm x 18.6mm x 11.75mm</span
+              >
+            </div>
+            <div class="card-body text-center">
+              <div class="ad-title m-auto">
+                <h5>The new generation hardware wallet</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% } %>
+        <div class="col-md-6">
+          <h2>
+            Your order for <%= product.name %> has been placed successfully.
+          </h2>
+          <br />
+          <h3><em>Current Status: <%= product.status %></em></h3>
+        </div>
+
+        <% if (product.slug == 'ledger-nano-s') { %>
+        <div class="col-md-6">
+          <div class="card rounded">
+            <div class="card-image">
+              <span class="card-notify-badge">Ledger Nano S</span>
+              <span class="card-notify-year">Upto 3 apps</span>
+              <!-- <img
+                class="img-fluid"
+                src="https://cdn.shopify.com/s/files/1/2974/4858/files/DESCRIPTION-LNS.png?v=1624516099"
+                alt="Ledger Nano S"
+              /> -->
+              <img
+                class="img-fluid"
+                src="https://www.ledger.com/wp-content/themes/ledger-v2/public/images/banner/banner-home-lns.jpg"
+                alt="Ledger Nano S"
+              />
+            </div>
+            <div class="card-image-overlay m-auto">
+              <span class="card-detail-badge">Price: €60.00</span>
+              <span class="card-detail-badge">Weight: 16.2g</span>
+              <span class="card-detail-badge"
+                >Size: 56.95mm x 17.4mm x 9.1mm</span
+              >
+            </div>
+            <div class="card-body text-center">
+              <div class="ad-title m-auto">
+                <h5>The world’s most popular hardware wallet</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% } %>
+      </div>
+    </div>
+  </body>
+</html>
